@@ -2,5 +2,7 @@ a = input("Number 1: ")
 b = input("Number 2: ")
 c = input("Number 3: ")
 
-n = (a*x**2)+(b*x)+c
-print(n)
+x1 = (-b + ((b**2) - (4*a*c)**0.5)/(2*a)
+x2 = (-b - ((b**2) - (4*a*c)**0.5)/(2*a)
+
+print(x1,x2)
