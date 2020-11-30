@@ -1,0 +1,14 @@
+books = ["ULYSSES","ANIMAL FARM","BRAVE NEW WORLD","ENDER'S GAME"]
+book_dict = {​​​​​}​​​​​
+for i in books:
+count = 0
+for j in range(len(i)-1):
+if i[j] != i[j+1]:
+count += 1
+book_dict[i] = (len(i),count)
+# print(book_dict)
+for book_key,char_tuple in book_dict.items():
+avg = (float() + float(char_tuple[1]))/2
+tuple_with_avg = (char_tuple[0],char_tuple[1],avg)
+book_dict[book_key] = tuple_with_avg
+print(book_dict)
