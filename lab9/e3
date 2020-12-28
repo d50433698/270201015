@@ -1,0 +1,10 @@
+def sumoflist(x):
+    if not isinstance(x,list):
+        return x
+    else:
+        sum = 0
+        for a in x:
+            sum += sumoflist(a)
+        return sum
+
+print(sumoflist([5,8,4,[3,7]]))
